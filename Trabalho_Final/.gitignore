@@ -1,0 +1,53 @@
+ 
+# Ambiente virtual
+kivy_env/
+
+# Bytecode Python e caches
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Logs e arquivos temporários
+*.log
+*.tmp
+*.bak
+*.swp
+*.~ 
+
+# Arquivos de build / distribuição
+build/
+dist/
+*.egg-info/
+
+# Configurações de IDEs
+.vscode/
+.idea/
+*.code-workspace
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos de testes
+.pytest_cache/
+.tox/
+.coverage
+htmlcov/
+
+# Arquivos de ambiente e variáveis
+.env
+.env.*
+
+# Arquivos do Kivy
+*.kv~
+*.atlas
+
+# Executáveis (caso use PyInstaller ou Buildozer no futuro)
+*.spec
+*.apk
+.buildozer/
+
+# Pasta de imagens geradas ou testes (opcional)
+testeima/__pycache__/
+testeima/imgs/
