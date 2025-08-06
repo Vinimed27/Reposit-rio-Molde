@@ -1,3 +1,4 @@
 kivy[full]
 kivy_garden.graph
 pymodbustcp
+pymodbus==2.5.3
