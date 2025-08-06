@@ -14,7 +14,7 @@ class MainApp(App):
         """
         Método que gera o aplicativo com o widget principal
         """
-        self._widget = MainWidget(scan_time=1000, server_ip='127.0.0.1',server_port=502,
+        self._widget = MainWidget(scan_time=1000, server_ip='10.15.30.183',server_port=502,
         modbus_addrs = {
             'Velocidade_saida_ar': 712,
             'Vazao_saida_ar': 714,

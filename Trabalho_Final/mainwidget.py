@@ -64,6 +64,7 @@ class MainWidget(BoxLayout):
                self._updateThread = Thread(target=self.updater)
                self._updateThread.start()
                self.ids.img_con.source = 'imgs/conectado.png'
+               self._modbusPopup.setInfo("")
                self._modbusPopup.dismiss()
             else:
                self._modbusPopup.setInfo("Falha na conexão com o servidor")
@@ -79,7 +80,6 @@ class MainWidget(BoxLayout):
             while self._updateWidgets:
                 self.readData()
                 self.updateGUI()
-                # 
                 sleep(self._scan_time/1000)
         except Exception as e:
             self._modbusClient.close()
